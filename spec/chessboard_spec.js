@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 describe("Board", function() {
 
   beforeEach(function() {
-    board = generate_chessboard();
+    board = generateChessboard();
   });
 
   describe("#placePiece", function() {
@@ -23,6 +22,3 @@ describe("Board", function() {
     });
   });
 });
-=======
-
->>>>>>> 9ccde052580a7a52e34faf983645b98dfdd5530d
