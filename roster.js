@@ -1,5 +1,5 @@
 function generate_roster() {
-  [
+ return [
     ['Number', 'Name', 'Position', 'Points per Game'],
     [12, 'Joe Schmo', 'Center', [14, 32, 7, 0, 23]],
     [9, 'Ms. Buckets', 'Point Guard', [19, 0, 11, 22, 0]],
