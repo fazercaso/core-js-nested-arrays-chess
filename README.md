@@ -32,7 +32,7 @@ firstRowThirdColumn = firstRow[2]
 ## Релизы
 ### Релиз 0: Шахматная доска
 ```javascript
-board = generateChessboard
+board = generateChessboard()
 # => [ ... ]
 board[7][0]
 # =>  "Б Ладья"
