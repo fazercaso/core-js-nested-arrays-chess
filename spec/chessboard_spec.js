@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 describe("Board", function() {
 
   beforeEach(function() {
@@ -22,3 +23,6 @@ describe("Board", function() {
     });
   });
 });
+=======
+
+>>>>>>> 9ccde052580a7a52e34faf983645b98dfdd5530d

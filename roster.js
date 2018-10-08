@@ -1,4 +1,4 @@
-function generate_roster() {
+function generateRoster() {
  return [
     ['Number', 'Name', 'Position', 'Points per Game'],
     [12, 'Joe Schmo', 'Center', [14, 32, 7, 0, 23]],

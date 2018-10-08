@@ -5,16 +5,16 @@
 
 
 ```javascript
-tic_tac_toe_board = [
+ticTacToeBoard = [
   ["X", "X", "O"],
   ["O", "O", "X"],
   ["X", "O", "X"]
 ]
 
-first_row = tic_tac_toe_board[0]
+firstRow = ticTacToeBoard[0]
 # => ["X", "X", "O"]
 
-first_row_third_column = first_row[2]
+firstRowThirdColumn = firstRow[2]
 # => "O"
 ```
 *Рисунок 1*.  Представление таблицы в виде *Массива масссивов*.
@@ -24,7 +24,7 @@ first_row_third_column = first_row[2]
 Если мы хотим получить первую строку таблицы - обращаемся к нулевому(0) индексу массива. Когда у нас есть строка - можем получать значения из нужных нам столбцов. Рисунок 1 демонстрирует как мы можем получить первую строку таблицы, и как получить значение последнего столбца в этой строке.
 
 На рисунке 1, чтобы получить значение из третьего столбца первой колонки, мы делаем промежуточный шаг, чтобы присвоить первую строку переменной. Затем мы используем переменную, чтобы получить значение, соответствующее 3-ему столбцу. Но мы можем упростить процесс получения нужного элемента следующим образом:
-`tic_tac_toe[0][2]`.
+`ticTacToe[0][2]`.
 
 Теперь вы знаете как обращаться к элементам во вложенных массивах. Давайте создадим несколько таких массивов самостоятельно.
 
@@ -32,17 +32,15 @@ first_row_third_column = first_row[2]
 ## Релизы
 ### Релиз 0: Шахматная доска
 ```javascript
-board = generate_chessboard
+board = generateChessboard
 # => [ ... ]
 board[7][0]
-# => "W Rook"
+# => "W Rook" ("Б Ладья")
 ```
-*Рисунок 2*.  Создание шахматной доски, и получение значения из 1-го столбца, последний строки
+*Рисунок 2*.  Создание шахматной доски, и получение значения из 1-го столбца, последней строки.
+Первое, что мы сделаем с использованием вложенных массивов - [шахматная доска](https://en.wikipedia.org/wiki/Chess#Rules).  Напишем функцию `generateChessboard`, которая возвращает представление шахматной доски в виде массива массивов. Каждая клеточка должна иметь строчное значение ("Б Король", "Ч Пешка") и должна находиться на своем месте, как в начале игры. Но фигурки занимают не все клетки, поэтому там, где их нет - пишем `null`.
 
-
-Первое, что мы сделаем с использованием вложенных массивов - [шахматная доска](https://en.wikipedia.org/wiki/Chess#Rules).  Напишем функцию `generate_chessboard`, которая возвращает представление шахматной доски в виде массива массивов. Каждая клеточка должна Pieces should be represented as strings (e.g., `'W Knight'` or `'B Pawn'`) and be placed in their positions at the start of the game.  Empty spaces should be represented as `nil`.  Tests have been written to describe the board.  (See Figure 2 for method usage examples.)
-
-Let's not make this more complicated than it needs to be; we just need to return the nested array.
+Не надо ничего усложнять, вам просто нужно вернуть массив массивов. Но генерация доски должна происходить при помощи циклов (элемент за элементом).
 
 
 ### Релиз 1: Табличные данные
@@ -55,12 +53,14 @@ Let's not make this more complicated than it needs to be; we just need to return
 | 18      | Sally Talls | Power Forward  | [18, 29, 26, 31, 19] |
 | 22      | MK DiBoux   | Small Forward  | [11, 0, 23, 17, 0]   |
 
-*Table 1*.  Roster data for a basketball team.
+*Таблица 1*.  Табличные данные баскетбольной команды.
 
-A nested array could also be used to represent a data table—similar to a spreadsheet—like we see in Table 1.  Again, we have data that maps well to rows and columns.
 
-```ruby
-roster = generate_roster
+
+И снова, у нас есть данные, которые хорошо перекладываются на массив массивов.
+
+```javascript
+roster = generateRoster
 # => [ ... ]
 roster[1]
 # => [12, "Joe Schmo", "Center", [14, 32, 7, 0, 23]]
@@ -71,10 +71,10 @@ roster[1][3]
 roster[1][3][0]
 # => 14
 ```
-*Figure 3*.  Generating a roster data table and accessing values.
+*Рисунок 3*.  Создание таблицы со списком внутри и обращение к ее элементам.
 
-Let's write a `generate_roster` method that represents the data shown in Table 1 as a nested array.  As with the `generate_chessboard` method, this method only needs to return the specified nested array.  Tests have been provided to help us determine whether or not our method is behaving as desired. (See Figure 3 for method usage examples.)
+Давайте напишем функцию `generateRoster`, которая предоставляет данные из Таблицы 1 в виде массива массивов. Как и было с `generateChessboard`, эта функция должна вернуть определенный массив(состоящий из массивов). И опять, генерация просиходит через циклы.
 
 
 ## Вывод
-This challenge is designed to give us exposure to nested arrays.  What are they?  How can we use them to represent real-world data?  We'll encounter them as we continue through Dev Bootcamp.
+Это задание направлено на то, чтобы дать вам представление о вложенных массивах. Что это такое, зачем, когда их надо применять. В дальнейшем мы еще будем с ними сталкиваться.
