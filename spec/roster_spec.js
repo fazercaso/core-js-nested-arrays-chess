@@ -1,8 +1,7 @@
-require_relative '../roster'
 
-describe 'generate_roster' do
-  let(:roster) { generate_roster }
-  let(:just_player_data) { roster[1..-1] }
+describe 'generate_roster' , () => {
+  let(roster) { generate_roster }
+  let(just_player_data) { roster[1..-1] }
 
   it 'has a header row' do
     desired_headers = ['Number', 'Name', 'Position', 'Points per Game']
