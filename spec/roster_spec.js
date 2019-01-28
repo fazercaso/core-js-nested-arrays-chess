@@ -4,11 +4,11 @@ describe("Board", function() {
     // board = .....
   });
 
-  describe("#place header", function() {
+  describe("place header", function() {
       // your code...
   });
 
-  describe("#init board", function() {
+  describe("init board", function() {
     // your code...
   });
 });
