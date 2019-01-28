@@ -1,10 +1,12 @@
 describe("Board", function() {
 
+  let board;
+  
   beforeEach(function() {
     board = generateChessboard();
   });
 
-  describe("#placePiece", function() {
+  describe("placePiece", function() {
     it("should return the correct piece for a given starting position", function() {
       expect(board[0][0]).toEqual('Ч Ладья');
       expect(board[1][1]).toEqual('Ч Пешка');
@@ -13,7 +15,7 @@ describe("Board", function() {
     });
   });
 
-  describe("#init", function() {
+  describe("init", function() {
     it("should generate an 8x8 array", function() {
       expect(board.length).toEqual(8);
       for (let i = 0; i < board.length; i++) {
