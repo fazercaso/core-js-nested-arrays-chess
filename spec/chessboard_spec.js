@@ -29,8 +29,8 @@ describe("Board", function () {
       expect(typeof renderChessboard(board)).toEqual('string');
     });
 
-    it("should have an emoji (first element is `♖`)", function () {
-      expect(renderChessboard(board)[0]).toEqual('♖');
+    it("should have an emoji (first element is `♜`)", function () {
+      expect(renderChessboard(board)[0]).toEqual('♜');
     });
   });
 });
