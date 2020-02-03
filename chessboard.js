@@ -2,7 +2,7 @@ function generateChessboard() {
     const figures = ['Ладья', 'Конь', 'Слон', 'Ферзь', 'Король', 'Слон', 'Конь', 'Ладья'];
     const pawns = new Array(8).fill('Пешка');
     
-    // Тут твой код.
+    // Тут твой код. Верни массив массивов.
 }
 
 function renderChessboard() {

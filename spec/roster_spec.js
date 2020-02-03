@@ -1,14 +1,17 @@
 describe("Board", function() {
 
+  // Тестов нет :\ 
+  // Попробуешь написать?
+
   beforeEach(function() {
     // board = .....
   });
 
   describe("place header", function() {
-      // your code...
+      // Код тут.
   });
 
   describe("init board", function() {
-    // your code...
+    // Код тут.
   });
 });
