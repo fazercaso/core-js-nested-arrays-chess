@@ -94,7 +94,7 @@ roster[1][3][0]
 Напиши функцию `generateRoster`, которая предоставляет данные из Таблицы 1 в виде массива массивов. Как и было с `generateChessboard`, эта функция должна вернуть определенный массив (состоящий из массивов). См. Рисунок 3.
 
 ### Релиз *. Тесты
-Ознакомься с инструкцией по написанию [тестов](https://github.com/Elbrus-Bootcamp/manuals/blob/master/how-to-use-jasmine.md).
+Ознакомься с инструкцией по написанию [тестов](https://github.com/Elbrus-Bootcamp/manuals/blob/master/jasmine.md).
 
 И попробуй написать свои тесты в `roster_spec.js`
 
