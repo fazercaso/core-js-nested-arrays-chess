@@ -96,7 +96,7 @@ roster[1][3][0]
 ### Релиз *. Тесты
 Ознакомься с инструкцией по написанию [тестов](https://github.com/Elbrus-Bootcamp/manuals/blob/master/jasmine.md).
 
-И попробуй написать свои тесты в `roster_spec.js`
+И попробуй написать свои тесты в `roster.spec.js`
 
 ## Вывод
 
