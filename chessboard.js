@@ -23,3 +23,5 @@ function renderChessboard() {
        
     // Тут твой код.
 }
+
+module.exports = {generateChessboard, renderChessboard};

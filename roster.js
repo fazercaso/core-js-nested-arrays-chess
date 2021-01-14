@@ -12,3 +12,5 @@ const points = {
 function generateRoster() {
 // Код тут.
 }
+
+module.exports = {generateRoster};

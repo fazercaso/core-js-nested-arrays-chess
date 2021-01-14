@@ -1,3 +1,5 @@
+const {generateChessboard, renderChessboard} = require('../chessboard')
+
 describe("Board", function () {
 
   let board;

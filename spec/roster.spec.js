@@ -1,3 +1,4 @@
+const { generateRoster } = require('../roster');
 describe("Board", function() {
 
   // Тестов нет :\ 
