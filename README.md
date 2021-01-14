@@ -96,7 +96,7 @@ roster[1][3][0]
 ### Релиз *. Тесты
 
 Мы написали тесты для функций generateChessboard и renderChessboard. Эти тесты находятся в файле /spec/chessboard.spec.js
-Для запуска тестов, в консоле, находясь в дирректории проекта набери - `npm jest`
+**Для запуска тестов** в консоле, находясь в дирректории проекта набери - `npm jest`
 
 Ознакомься с инструкцией по написанию [тестов](https://github.com/Elbrus-Bootcamp/manuals/blob/master/jasmine.md).
 
