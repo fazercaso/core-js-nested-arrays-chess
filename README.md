@@ -97,7 +97,7 @@ We have written tests for to check the functions generateChessboard and renderCh
 
 **To run the tests**, type `npm jest` in the console in the project directory.
 
-Read the instructions on how to write [tests] (https://github.com/Elbrus-Bootcamp/manuals/blob/master/jasmine.md).
+Read the instructions on how to write [tests](https://github.com/Elbrus-Bootcamp/manuals/blob/master/jasmine.md).
 
 And try to write your own tests for the function `generateRoster` in the file `roster.spec.js`.
 
