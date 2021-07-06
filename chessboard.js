@@ -1,27 +1,28 @@
 function generateChessboard() {
-    const figures = ['Ладья', 'Конь', 'Слон', 'Ферзь', 'Король', 'Слон', 'Конь', 'Ладья'];
-    const pawns = new Array(8).fill('Пешка');
+    const figures = ['Rook', 'Knight', 'Bishop', 'Queen', 'King', 'Bishop', 'Knight', 'Rook'];
+    const pawns = new Array(8).fill('Pawn');
     
-    // Тут твой код. Верни массив массивов.
+    // Your code is here. Returned is array of arrays.
+    // B = black, W = white
 }
 
 function renderChessboard() {
     const emojis = {
-        'Б Ферзь': '♕',
-        'Б Король': '♔',
-        'Б Слон': '♗',
-        'Б Конь': '♘',
-        'Б Ладья': '♖',
-        'Б Пешка': '♙',
-        'Ч Ферзь': '♛',
-        'Ч Король': '♚',
-        'Ч Слон': '♝',
-        'Ч Конь': '♞',
-        'Ч Ладья': '♜',
-        'Ч Пешка': '♟'
+        'W Queen': '♕',
+        'W King': '♔',
+        'W Bishop': '♗',
+        'W Knight': '♘',
+        'W Rook': '♖',
+        'W Pawn': '♙',
+        'B Queen': '♛',
+        'B King': '♚',
+        'B Bishop': '♝',
+        'B Knight': '♞',
+        'B Rook': '♜',
+        'B Pawn': '♟'
     }
        
-    // Тут твой код.
+    // Your code is here.
 }
 
 module.exports = {generateChessboard, renderChessboard};
