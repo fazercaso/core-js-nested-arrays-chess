@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/Elbrus-Bootcamp/core-js-nested-arrays-chess#readme",
   "dependencies": {
-    "jest": "^26.6.3"
+    "jest": "^27.3.1"
   }
 }
